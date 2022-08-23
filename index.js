@@ -5,7 +5,7 @@ document.getElementById("dodger").style.background = "#FF69B4";
 
 
 const moveDodgerLeft = () => {
-  let distance = (dodger.style.left.replace("px", ""));
+  let distance = parseInt(dodger.style.left.replace("px", ""));
   if (distance > 0) {
     dodger.style.left = distance - 1 + "px";
   }
